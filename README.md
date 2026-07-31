@@ -8,7 +8,7 @@ Instead of displaying only time, Ninja Time creates an exciting real-time battle
 ## 📸 Preview
 
 
-![Preview](assets/images/preview.gif)
+https://narutoclock.vercel.app/
 
 ---
 
