@@ -444,13 +444,10 @@ body.night .cloud{
 
 
 .app{
-
-    width:min(1300px,92%);
-
-    margin:auto;
-
-    padding:40px 0 60px;
-
+    width:1200px;
+    margin:0 auto;
+    transform:scale(0.8);
+    transform-origin:top center;
 }
 
 
