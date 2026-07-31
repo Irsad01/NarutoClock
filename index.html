@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Ninja Time | Naruto Digital Clock</title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<div class="background">
+
+    <div class="gradient"></div>
+
+    <canvas id="particles"></canvas>
+
+    <div class="sun"></div>
+
+    <div class="moon"></div>
+
+    <div class="cloud cloud1"></div>
+
+    <div class="cloud cloud2"></div>
+
+    <div id="rain"></div>
+
+    <div id="snow"></div>
+
+    <div id="stars"></div>
+
+</div>
+
+
+    <main class="app">
+
+     
+
+        <section class="weather-card glass">
+
+            <div class="weather-left">
+
+                <i id="weatherIcon"
+                    class="fa-solid fa-cloud"></i>
+
+                <div>
+
+                    <h2 id="temperature">--°C</h2>
+
+                    <p id="weatherDescription">
+
+                        Loading Weather...
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="weather-right">
+
+                <p>
+
+                    Humidity
+
+                    <span id="humidity">
+
+                        --%
+
+                    </span>
+
+                </p>
+
+                <p>
+
+                    Wind
+
+                    <span id="wind">
+
+                        -- km/h
+
+                    </span>
+
+                </p>
+
+            </div>
+
+        </section>
+
+       
+
+        <section class="clock-card glass">
+
+            <h2 id="greeting">
+
+                Good Evening
+
+            </h2>
+
+            <div class="clock">
+
+                <span id="hour">00</span>
+
+                <span class="colon">:</span>
+
+                <span id="minute">00</span>
+
+                <span class="colon blink">:</span>
+
+                <span id="second">00</span>
+
+            </div>
+
+
+            
+<div id="track">
+
+    <canvas id="effectsCanvas"></canvas>
+
+    <div id="dustContainer"></div>
+
+    <div id="afterImages"></div>
+
+    <div id="chakraTrail"></div>
+
+    <div id="aura"></div>
+
+    <div id="ninjaShadow"></div>
+    
+    <div id="battleFlash"></div>
+
+    <div id="rasengan"></div>
+
+<div id="chidori"></div>
+
+
+
+    <div id="ninja">
+
+        <img
+            id="ninjaImage"
+            src="assets/images/ninja-run-1.png"
+            draggable="false"
+        >
+
+    </div>
+
+
+    <div id="enemy">
+
+        <img
+            id="enemyImage"
+            src="assets/images/enemy-run-1.png"
+            draggable="false"
+        >
+
+    </div>
+
+</div>
+
+   
+
+
+            <div class="date">
+
+                <h3 id="day">
+
+                    Monday
+
+                </h3>
+
+                <p id="fullDate">
+
+                    01 January 2026
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="dashboard">
+
+
+            <div class="card glass">
+
+                <h3>
+
+                    <i class="fa-solid fa-stopwatch"></i>
+
+                    Stopwatch
+
+                </h3>
+
+                <h1 id="stopwatchDisplay">
+
+                    00:00:00
+
+                </h1>
+
+                <div class="buttons">
+
+                    <button id="startSW">
+
+                        Start
+
+                    </button>
+
+                    <button id="pauseSW">
+
+                        Pause
+
+                    </button>
+
+                    <button id="resetSW">
+
+                        Reset
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="card glass">
+
+                <h3>
+
+                    <i class="fa-solid fa-hourglass-half"></i>
+
+                    Countdown
+
+                </h3>
+
+                <input
+                    type="number"
+                    id="countdownInput"
+                    placeholder="Enter Seconds">
+
+                <h1 id="countdownDisplay">
+
+                    00:00
+
+                </h1>
+
+                <button id="startCountdown">
+
+                    Start Countdown
+
+                </button>
+
+            </div>
+
+
+            <div class="card glass">
+
+                <h3>
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    Alarm Clock
+
+                </h3>
+
+                <input
+                    type="time"
+                    id="alarmTime">
+
+                <button id="setAlarm">
+                    Set Alarm </button>
+                
+                <button id="stopAlarm">
+                    Stop Alarm</button>
+                
+                <button id="cancelAlarm">
+                    Cancel Alarm</button>
+
+
+                <p id="alarmStatus">
+
+                    No Alarm Set
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+<audio id="tickSound"
+       src="assets/audio/tick.mp3">
+</audio>
+
+
+<audio id="alarmSound"
+       src="assets/audio/alarm.mp3"
+       loop>
+</audio>
+
+
+<audio id="footstep"
+       src="assets/audio/footstep.mp3">
+</audio>
+
+
+
+<script type="module" src="app.js"></script>
+</body>
+
+</html>
