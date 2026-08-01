@@ -444,7 +444,7 @@ body.night .cloud{
 
 
 .app{
-    width:1200px;
+    width:900px;
     margin:0 auto;
     transform:scale(0.8);
     transform-origin:top center;
@@ -1397,7 +1397,7 @@ body.snow #snow{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
 
     gap:25px;
 
